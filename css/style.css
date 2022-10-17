@@ -1,0 +1,95 @@
+html, body {
+    height: 100%;
+}
+ul, ol, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: 14px;
+    margin: 0;
+}
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.main {
+    flex: 1 1 auto;
+}
+.container {
+    max-width: 990px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+/* PC */
+@media (max-width: 990px){
+    .container {
+        max-width: 970px;
+    }
+}
+/* tablet */
+@media (max-width: 991.98px){
+    .container {
+        max-width: 750px;
+    }
+}
+/* phone */
+@media (max-width: 767.98px){
+    .container {
+        max-width: none;
+    }
+}
+.header {
+    /* position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100; */
+}
+.header__container {
+    display: flex;
+    min-height: 80px;
+    align-items: center;
+}
+.header__logo {
+    display: flex;
+}
+.logo__text {
+    margin: 0px 0px 0px 11px;
+    align-self: center;
+    font-size: 30px;
+    font-weight: 200;
+    background-image: linear-gradient(0deg, rgb(0, 224, 208), rgb(74, 163, 204));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.header__menu {
+    flex: 1 1 auto;
+}
+.menu {
+    display: flex;
+    justify-content: flex-end;
+}
+.menu__list {
+    display: flex;
+    gap: 25px;
+}
+
+.menu__item {
+}
+.menu__link {
+    font-style: 13px;
+    font-weight: 900;
+    text-transform: uppercases;
+    /* color: #fff; */
+}
+@media (max-width: 991.98px){
+    .menu__list {
+        gap: 20px;
+    }
+}
